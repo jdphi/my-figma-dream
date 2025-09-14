@@ -22,10 +22,11 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -39,24 +40,39 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          header: "hsl(var(--card-header))",
+          muted: "hsl(var(--card-muted))",
+        },
+        research: {
+          item: "hsl(var(--research-item))",
+          "item-foreground": "hsl(var(--research-item-foreground))",
+          comment: "hsl(var(--research-comment))",
+          "comment-foreground": "hsl(var(--research-comment-foreground))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+          item: "hsl(var(--sidebar-item))",
+          "item-hover": "hsl(var(--sidebar-item-hover))",
+          "item-active": "hsl(var(--sidebar-item-active))",
         },
+        search: {
+          panel: "hsl(var(--search-panel))",
+          "panel-foreground": "hsl(var(--search-panel-foreground))",
+          input: "hsl(var(--search-input))",
+          results: "hsl(var(--search-results))",
+        },
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
+      },
+      transitionProperty: {
+        smooth: "var(--transition-smooth)",
       },
       borderRadius: {
         lg: "var(--radius)",
